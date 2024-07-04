@@ -1,0 +1,14 @@
+@use "../abstracts/variables" as vars;
+
+.footer {
+  background: vars.$grey;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-family: vars.$font-family;
+  background-color: vars.$dark-grey;
+  color: vars.$white;
+  padding: 0.25rem;
+  text-align: center;
+}

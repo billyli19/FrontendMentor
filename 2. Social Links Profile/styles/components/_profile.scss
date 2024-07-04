@@ -1,0 +1,59 @@
+@use "../abstracts/variables" as vars;
+
+.profile-card__image {
+  @include mobile-small {
+    border-radius: 50%;
+    height: 5.5rem;
+  }
+}
+
+.profile-card__content {
+  @include mobile-small {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+  }
+}
+
+.profile-card__name {
+  @include mobile-small {
+    font-size: 1.5rem;
+    align-self: stretch;
+    color: vars.$white;
+    text-align: center;
+    align-self: stretch;
+
+    /* Heading */
+    font-style: normal;
+    font-weight: vars.$font-weight-medium;
+    line-height: vars.$line-height; /* 2.25rem */
+  }
+}
+
+.profile-card__location {
+  @include mobile-small {
+    color: vars.$neon-green;
+    text-align: center;
+    align-self: stretch;
+
+    /* Body (Bold) */
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: vars.$font-weight-bold;
+    line-height: vars.$line-height; /* 1.3125rem */
+  }
+}
+
+.profile-card__bio {
+  @include mobile-small {
+    color: vars.$white;
+    text-align: center;
+    align-self: stretch;
+
+    /* Body (Regular) */
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: vars.$font-weight-standard;
+    line-height: vars.$line-height; /* 1.3125rem */
+  }
+}

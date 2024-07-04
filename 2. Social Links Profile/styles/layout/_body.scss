@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as vars;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  @include mobile-small {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: vars.$black;
+  }
+}

@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as vars;
+
+* {
+  font-family: vars.$font-family;
+  margin: 0;
+  padding: 0;
+}

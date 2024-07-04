@@ -1,0 +1,38 @@
+$breakpoints: (
+  "mobile-width--small": "320px",
+  "mobile-width": "480px",
+  "tablet-width": "768px",
+  "desktop-width": "992px",
+  "desktop-width--large": "1200px",
+);
+
+/* Media Queries */
+@mixin mobile-small {
+  @media (min-width: map-get($breakpoints, "mobile-width--small")) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: map-get($breakpoints, "mobile-width")) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: map-get($breakpoints, "tablet-width")) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: map-get($breakpoints, "desktop-width")) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media (min-width: map-get($breakpoints, "desktop-width--large")) {
+    @content;
+  }
+}
