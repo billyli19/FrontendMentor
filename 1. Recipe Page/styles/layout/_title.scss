@@ -1,0 +1,39 @@
+@use "../abstracts/variables" as vars;
+
+.title {
+  @include mobile-small {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+  }
+}
+
+.recipe__title {
+  @include mobile-small {
+    align-self: stretch;
+
+    color: vars.$dark-charcoal;
+    font-family: $secondary-font;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: $secondary-font-light;
+    line-height: 100%; /* 2.25rem */
+  }
+}
+
+.recipe__description {
+  @include mobile-small {
+    align-self: stretch;
+
+    color: vars.$wenge-brown;
+
+    /* Body (Regular) */
+    font-family: $primary-font;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: $primary-font-light;
+    line-height: 150%; /* 1.5rem */
+  }
+}

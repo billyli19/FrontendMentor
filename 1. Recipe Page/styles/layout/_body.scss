@@ -1,0 +1,60 @@
+@use "../abstracts/variables" as vars;
+
+body {
+  @include desktop {
+    display: flex;
+    width: 100%;
+    padding: 5rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: vars.$eggshell;
+  }
+}
+
+.recipe {
+  @include mobile-small {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background: vars.$white;
+  }
+
+  @include desktop {
+    display: flex;
+    width: 46rem;
+    padding: 2.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+    border-radius: 1.5rem;
+  }
+}
+
+.recipe__banner {
+  img {
+    width: 100%;
+
+    @include desktop {
+      border-radius: 0.75rem;
+    }
+
+    @include desktop-large {
+      border-radius: 0.75rem;
+    }
+  }
+}
+
+main {
+  @include mobile-small {
+    display: flex;
+    padding: 2.5rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    align-self: stretch;
+  }
+}

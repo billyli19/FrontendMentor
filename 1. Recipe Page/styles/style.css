@@ -1,0 +1,355 @@
+/* Media Queries */
+@media (min-width: 320px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+  }
+}
+
+@media (min-width: 320px) {
+  .recipe__title {
+    align-self: stretch;
+    color: #312e2c;
+    font-family: "Young Serif", serif;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 2.25rem */
+  }
+}
+
+@media (min-width: 320px) {
+  .recipe__description {
+    align-self: stretch;
+    color: #5f564d;
+    /* Body (Regular) */
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.5rem */
+  }
+}
+
+@media (min-width: 320px) {
+  .preparation {
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+    border-radius: 0.75rem;
+    background: #fff7fb;
+  }
+}
+
+.preparation__title {
+  align-self: stretch;
+  color: #7a284e;
+  /* Heading S */
+  font-family: "Outfit", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 1.25rem */
+}
+
+@media (min-width: 320px) {
+  .preparation-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+  }
+  .preparation-list li {
+    padding-left: 0.5rem;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+    margin-left: 1rem;
+  }
+  .preparation-list li::marker {
+    display: flex;
+    width: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: stretch;
+    color: #7a284e;
+  }
+  .preparation-list li span {
+    flex: 1 0 0;
+    color: #5f564d;
+    /* Body (Regular) */
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .preparation-list li span b {
+    color: #5f564d;
+    /* Body (Regular) */
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 1.5rem */
+  }
+}
+
+@media (min-width: 320px) {
+  .ingredients {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+  }
+}
+
+@media (min-width: 320px) {
+  .ingredients-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+    margin-left: 1rem;
+  }
+  .ingredients-list li {
+    padding-left: 0.5rem;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+  }
+  .ingredients-list li::marker {
+    display: flex;
+    width: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: stretch;
+    color: #7a284e;
+    padding-left: 10rem;
+  }
+  .ingredients-list li span {
+    flex: 1 0 0;
+    color: #5f564d;
+    /* Body (Regular) */
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.5rem */
+  }
+}
+
+@media (min-width: 320px) {
+  .instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+  }
+}
+
+@media (min-width: 320px) {
+  .instructions-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+    margin-left: 1rem;
+  }
+  .instructions-list li {
+    padding-left: 0.5rem;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+  }
+  .instructions-list li::marker {
+    color: #854632;
+    /* Body (Bold) */
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 1.5rem */
+  }
+  .instructions-list li span {
+    flex: 1 0 0;
+    color: #5f564d;
+    /* Body (Regular) */
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .instructions-list li span b {
+    color: #5f564d;
+    /* Body (Bold) */
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 1.5rem */
+  }
+}
+
+@media (min-width: 320px) {
+  .nutritions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+  }
+  .nutritions p {
+    align-self: stretch;
+    color: #5f564d;
+    /* Body (Regular) */
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.5rem */
+  }
+}
+
+@media (min-width: 320px) {
+  .nutrition-table {
+    width: 100%;
+  }
+  .nutrition-table tbody {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    align-self: stretch;
+  }
+  .nutrition-table tbody tr {
+    display: flex;
+    padding: 0rem 2rem;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+  }
+  .nutrition-table tbody tr td {
+    flex: 1 0 0;
+    color: #5f564d;
+    /* Body (Regular) */
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.5rem */
+  }
+  .nutrition-table tbody tr td b {
+    flex: 1 0 0;
+    color: #854632;
+    /* Body (Bold) */
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 1.5rem */
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    display: flex;
+    width: 100%;
+    padding: 5rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f7f3f0;
+  }
+}
+
+@media (min-width: 320px) {
+  .recipe {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #ffffff;
+  }
+}
+@media (min-width: 992px) {
+  .recipe {
+    display: flex;
+    width: 46rem;
+    padding: 2.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+    border-radius: 1.5rem;
+  }
+}
+
+.recipe__banner img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .recipe__banner img {
+    border-radius: 0.75rem;
+  }
+}
+@media (min-width: 1200px) {
+  .recipe__banner img {
+    border-radius: 0.75rem;
+  }
+}
+
+@media (min-width: 320px) {
+  main {
+    display: flex;
+    padding: 2.5rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    align-self: stretch;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Outfit", sans-serif;
+  background-color: #ffffff;
+  color: #854632;
+  padding: 0.25rem;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section__title {
+  align-self: stretch;
+  color: #854632;
+  /* Heading M */
+  font-family: "Young Serif", serif;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 1.75rem */
+}
+
+.divider {
+  height: 0.0625rem;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as vars;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section__title {
+  align-self: stretch;
+
+  color: vars.$brandy-red;
+  /* Heading M */
+  font-family: vars.$secondary-font;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: vars.$secondary-font-light;
+  line-height: 100%; /* 1.75rem */
+}
+
+.divider {
+  height: 0.0625rem;
+  width: 100%;
+}

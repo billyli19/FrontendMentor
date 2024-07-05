@@ -64,7 +64,6 @@
 @media (min-width: 320px) {
   .profile-card__image {
     border-radius: 50%;
-    height: 5.5rem;
   }
 }
 

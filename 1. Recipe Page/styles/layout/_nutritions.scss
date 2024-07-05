@@ -1,0 +1,72 @@
+@use "../abstracts/variables" as vars;
+
+.nutritions {
+  @include mobile-small {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+
+    p {
+      align-self: stretch;
+
+      color: vars.$wenge-brown;
+
+      /* Body (Regular) */
+      font-family: vars.$primary-font;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: vars.$primary-font-light;
+      line-height: 150%; /* 1.5rem */
+    }
+  }
+}
+
+.nutrition-table {
+  @include mobile-small {
+    width: 100%;
+
+    tbody {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+      align-self: stretch;
+
+      tr {
+        display: flex;
+        padding: 0rem 2rem;
+        align-items: center;
+        gap: 1rem;
+        align-self: stretch;
+
+        td {
+          flex: 1 0 0;
+
+          color: vars.$wenge-brown;
+
+          /* Body (Regular) */
+          font-family: vars.$primary-font;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: vars.$primary-font-light;
+          line-height: 150%; /* 1.5rem */
+
+          b {
+            flex: 1 0 0;
+
+            color: vars.$brandy-red;
+
+            /* Body (Bold) */
+            font-family: vars.$primary-font;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: vars.$primary-font-bold;
+            line-height: 150%; /* 1.5rem */
+          }
+        }
+      }
+    }
+  }
+}

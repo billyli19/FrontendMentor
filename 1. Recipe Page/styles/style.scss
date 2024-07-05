@@ -2,17 +2,14 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
-// Base
-
-// Components
-@import "components/buttons";
-@import "components/profile-card";
-
 // Layout
+@import "layout/title";
+@import "layout/preparation";
+@import "layout/ingredients";
+@import "layout/instructions";
+@import "layout/nutritions";
 @import "layout/body";
 @import "layout/footer";
 
-// Pages
-
-// Themes
+// Theme
 @import "theme/theme";
