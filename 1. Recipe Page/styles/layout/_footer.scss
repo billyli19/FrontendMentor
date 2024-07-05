@@ -5,9 +5,12 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  font-family: vars.$primary-font;
-  background-color: vars.$white;
-  color: vars.$brandy-red;
-  padding: 0.25rem;
-  text-align: center;
+
+  p {
+    font-family: vars.$primary-font;
+    background-color: vars.$white;
+    color: vars.$brandy-red;
+    padding: 0.25rem;
+    text-align: center;
+  }
 }
