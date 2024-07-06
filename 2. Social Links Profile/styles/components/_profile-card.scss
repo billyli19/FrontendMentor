@@ -1,82 +1,80 @@
 @use "../abstracts/variables" as vars;
 
-.profile-card {
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.card {
+  @include mobile-small {
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    border-radius: 0.75rem;
+    background: vars.$dark-grey;
+  }
+}
+
+header {
+  @include mobile-small {
+    img {
+      width: 5.5rem;
+      height: 5.5rem;
+
+      border-radius: 62.4375rem;
+    }
+  }
+}
+
+.card__bio {
   @include mobile-small {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: vars.$dark-grey;
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    gap: 1.5rem;
-  }
-
-  @include tablet {
-    padding: 2.5rem;
-  }
-
-  @include desktop {
-    padding: 2.5rem;
-  }
-
-  @include desktop-large {
-    padding: 2.5rem;
-  }
-}
-
-.profile-card__image {
-  @include mobile-small {
-    border-radius: 50%;
-  }
-}
-
-.profile-card__content {
-  @include mobile-small {
-    display: flex;
-    flex-direction: column;
+    gap: 0.25rem;
     align-self: stretch;
+
+    h1 {
+      align-self: stretch;
+
+      color: vars.$white;
+      text-align: center;
+
+      /* Heading */
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: vars.$font-weight-bold;
+    }
+
+    p {
+      align-self: stretch;
+
+      color: vars.$neon-green;
+      text-align: center;
+
+      /* Body (Bold) */
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: vars.$font-weight-bold;
+    }
   }
 }
 
-.profile-card__name {
+.card__description {
   @include mobile-small {
-    font-size: 1.5rem;
     align-self: stretch;
+
     color: vars.$white;
     text-align: center;
-    align-self: stretch;
-
-    /* Heading */
-    font-style: normal;
-    font-weight: vars.$font-weight-medium;
-    line-height: vars.$line-height; /* 2.25rem */
-  }
-}
-
-.profile-card__location {
-  @include mobile-small {
-    color: vars.$neon-green;
-    text-align: center;
-    align-self: stretch;
-
-    /* Body (Bold) */
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: vars.$font-weight-bold;
-    line-height: vars.$line-height; /* 1.3125rem */
-  }
-}
-
-.profile-card__bio {
-  @include mobile-small {
-    color: vars.$white;
-    text-align: center;
-    align-self: stretch;
 
     /* Body (Regular) */
     font-size: 0.875rem;
     font-style: normal;
     font-weight: vars.$font-weight-standard;
-    line-height: vars.$line-height; /* 1.3125rem */
   }
 }
